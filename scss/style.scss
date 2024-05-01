@@ -1,0 +1,20 @@
+// Importacion de elementos
+
+//base
+@import 'base/layout-banner';
+@import 'base/reset';
+@import 'base/vars';
+
+//components
+@import 'components/footer';
+@import 'components/navbar';
+
+//layouts
+@import 'layout/index';
+@import 'layout/banda';
+@import 'layout/discografia';
+@import 'layout/tour';
+@import 'layout/galeria';
+@import 'layout/media';
+
+

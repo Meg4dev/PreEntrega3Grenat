@@ -1,0 +1,52 @@
+.background-gallery{
+    background-image: url(../images/gallery-background.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+.pic-gallery{
+    max-width: 100%;
+    padding: 25px 25px;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.gallery-box article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-box article img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px;
+}
+
+.gallery-box{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+    grid-auto-rows: 800px;
+    grid-auto-flow:row;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-box .wide{
+    grid-column: span 2;
+}
+
+.gallery-box .tall{
+    grid-row: span 2;
+}
+
+.gallery-box .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}

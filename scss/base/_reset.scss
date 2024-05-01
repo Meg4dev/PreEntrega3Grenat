@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO-proximanovacond-black';
+    src: url(../fonts/Fontspring-DEMO-proximanovacond-black.otf);
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO-proximanova-bold';
+    src: url(../fonts/Fontspring-DEMO-proximanova-bold.otf);
+
+}
+
+@font-face {
+    font-family: 'Fontspring-DEMO-proximanova-regular';
+    src: url(../fonts/Fontspring-DEMO-proximanova-regular.otf);
+}
+
+iframe{
+    padding: 20px;
+    margin: 0;
+    height: 500px;
+}

@@ -1,0 +1,68 @@
+.background-banda{
+    background-image: url(../images/background-banda.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+/* Item contenedor para cada miembro */
+.member-item{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 30px 40px;
+    gap: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgb(27, 27, 27);
+}
+
+
+.member-item-reverse{
+    display: flex;
+    text-align: end;
+    flex-direction: row-reverse;
+    height: 100%;
+    width: 100%;
+    padding: 30px 40px;
+    gap: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgb(27, 27, 27);
+}
+
+/* Contenedor para la imagen del miembro */
+.pics-container{
+    width: 45%;
+    height: 100%;
+    overflow: auto;
+}
+
+.member-pic{
+    width: 750px;
+    height: 700px;
+    object-fit: cover;
+}
+
+/* Contenedor para el titulo y texto del miembro */
+.member-info-container{
+    width: 55%;
+    height: 100%;
+    overflow: auto;
+}
+
+.member-name{
+    font-family: 'Fontspring-DEMO-proximanovacond-black';
+    font-size: 6rem;
+    color: white;
+}
+
+.member-history{
+    font-family: 'Fontspring-DEMO-proximanova-regular';
+    font-size: 18px;
+    color: white;
+    margin: 0;
+}
+

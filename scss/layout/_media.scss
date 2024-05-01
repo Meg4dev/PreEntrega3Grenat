@@ -1,0 +1,353 @@
+/* Media Queries para index.html */
+
+@media (max-width: 1024px){
+    
+    .release-album{
+        width: 100%;
+        height: auto;
+    }
+    .release-album-title{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .release-container
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nextdates-container{
+        flex-direction: column;
+        width: auto;
+        height: 300px;
+        gap: 40px;
+    }
+    .nextdate-items{
+        width: auto;
+        height: 300px;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .nextdate-button{
+        justify-content: center;
+    }
+    .next-date{
+        font-size: 18px;
+    }}
+
+
+    /* Media Queries para Banda.html */
+
+
+    @media (max-width: 1400px){
+    .member-item{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+    }
+
+    .member-item-reverse{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .member-info-container{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .pics-container{
+        width: 100%;
+        height: 100%;
+    }
+    .member-item img{
+        width: 100%;
+        height: 100%;
+    }
+    .member-item-reverse img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 910px){
+    .member-name{
+        font-size: 5rem;
+    }
+
+}
+
+@media (max-width: 650px){
+    .member-name{
+        font-size: 4rem;
+    }
+    .member-history{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 435px){
+    .member-name{
+        font-size: 3rem;
+    }
+    .member-history{
+        font-size: 14px;
+    }
+
+
+}
+
+
+/* Media Queries para Discografia.html */
+
+
+
+@media (max-width: 1580px){
+    .album-box{
+        flex-direction: column;
+        text-align: center;
+        background-color: transparent;
+    }
+    .album-info-container{
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: black 4px 4px 4px;
+    padding: 10px 20px;
+    }
+    .spotify-button{
+        align-self: center;
+        background-color: black;
+        height: 29px;
+        width: 84px;
+        border-radius: 5px;
+        box-shadow: black 2px 2px 2px 2px;
+    }
+    .spotify-link:hover{
+        color: yellow;
+        font-size: 15px;
+        transition: 0.5s;
+    }
+    
+}
+
+@media (max-width: 888px){
+
+    .album-pic-container{
+        width: 500px;
+        height: 500px;
+        align-self: center;
+    }
+    .album-img{
+        width: 500px;
+        height: 500px;
+    }
+
+    .album-title{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 570px){
+    .album-pic-container{
+        width: 400px;
+        height: 400px;
+        align-self: center;
+        }
+    .album-img{
+        width: 400px;
+        height: 400px;
+        }
+    main h1{
+        font-size: 3rem;
+    }
+
+    .album-info-container{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .album-text{
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 478px){
+    .album-pic-container{
+        width: 300px;
+        height: 300px;
+        align-self: center;
+        }
+    .album-img{
+        width: 300px;
+        height: 300px;
+        }
+    .album-title{
+        font-size: 3rem;
+        .album-pic-container{
+            width: 200px;
+            height: 200px;
+            align-self: center;
+            }
+        .album-img{
+            width: 200px;
+            height: 200px;
+            }
+    }
+
+}
+
+@media (max-width: 380px){
+    main h1{
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Media Queries para tour.html */
+
+
+
+@media ( max-width: 1410px){
+    .date-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .video-container{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .video-item{
+        justify-self: center;
+        width: 100%;
+        height: 100%;
+    }
+} 
+@media( max-width: 930px){
+    .date-box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media( max-width: 512px){
+    .date-box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .date-item{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    .video-item{
+        width: 100%;
+        height: 100%;
+    }
+    .common-titles{
+        font-size: 2rem;
+    }
+}
+
+/* Media Queries para Galeria.html */
+
+
+@media (min-width:640px ) and (max-width: 1024px){
+    .gallery-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .pic-gallery{
+        width: 100%;
+        height: 100%;
+        object-fit:  contain;
+    }
+}
+
+@media (min-width:320px ) and (max-width: 640px){
+    .gallery-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .pic-gallery{
+        width: auto;
+        height: auto;
+        object-fit:  contain;
+    }
+}
+
+/* Media Queries para footer y Main h1*/
+
+@media ( min-width: 300px) and ( max-width: 430px){
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-item{
+        align-self: center;
+    }
+}
+
+@media ( max-width: 1024px){    
+    main h1{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
+    width: auto;
+    height: 850px;
+}}
+
+@media (min-width: 768px) and ( max-width: 1024px){    
+    main h1{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
+    width: auto;
+    height: 750px;
+}}
+
+@media (min-width: 320px) and ( max-width: 768px){    
+    main h1{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
+    width: auto;
+    height: 650px;
+}}
+
+.spotify-link:hover{
+    color: yellow;
+    transition: 0.5s;
+}
+
+.buytickets-link:hover{
+    color: yellow;
+    font-size: 18px;
+    transition: 0.5s;
+
+}
+
+.pic-gallery:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.footer-link:hover{
+    color: yellow;
+    font-size: 18px;
+    transition: 0.5s;
+}

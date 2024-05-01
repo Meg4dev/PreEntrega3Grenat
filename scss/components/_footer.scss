@@ -1,0 +1,23 @@
+/* Footer */
+
+.footer-list{
+    gap: 25px;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Fontspring-DEMO-proximanovacond-black';
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-item{
+    text-decoration: none;
+}
+
+.footer-link{
+    color: white;
+    text-decoration: none;
+}
