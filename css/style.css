@@ -246,12 +246,11 @@ nav {
   background-size: cover;
 }
 
-/* Item contenedor para cada miembro */
 .member-item {
   display: flex;
   flex-direction: row;
-  height: 100%;
   width: 100%;
+  height: 100%;
   padding: 30px 40px;
   gap: 20px;
   background-color: black;
@@ -261,18 +260,17 @@ nav {
 
 .member-item-reverse {
   display: flex;
-  text-align: end;
   flex-direction: row-reverse;
-  height: 100%;
   width: 100%;
+  height: 100%;
   padding: 30px 40px;
   gap: 20px;
+  text-align: end;
   background-color: black;
   border-radius: 10px;
   box-shadow: 4px 4px 4px rgb(27, 27, 27);
 }
 
-/* Contenedor para la imagen del miembro */
 .pics-container {
   width: 45%;
   height: 100%;
@@ -284,7 +282,6 @@ nav {
   object-fit: cover;
 }
 
-/* Contenedor para el titulo y texto del miembro */
 .member-info-container {
   width: 55%;
   height: 100%;
@@ -296,7 +293,7 @@ nav {
   color: white;
 }
 .member-info-container .member-history {
-  font-family: "Fontspring-DEMO-proximanova-regular";
+  font-family: "SchibstedGrotesk-Regular";
   font-size: 18px;
   color: white;
   margin: 0;
@@ -311,50 +308,43 @@ nav {
 }
 
 .album-box {
-  width: 100%;
-  height: 100%;
-  padding: 20px 30px;
-  margin: 5px;
-  overflow: auto;
   display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 20px 30px;
   gap: 20px;
   background-color: black;
   border-radius: 10px;
+  margin: 5px;
+  overflow: auto;
 }
-
-.album-info-container {
+.album-box .album-info-container {
   width: 100%;
   height: 100%;
 }
-
-.album-title {
+.album-box .album-title {
   font-family: "Fontspring-DEMO-proximanovacond-black";
   font-size: 5rem;
   color: white;
 }
-
-.album-text {
-  font-family: "Fontspring-DEMO-proximanova-regular";
+.album-box .album-text {
+  font-family: "SchibstedGrotesk-Regular";
   font-size: 18px;
   color: white;
 }
-
-.album-pic-container {
+.album-box .album-pic-container {
   width: 100%;
   height: 100%;
 }
-
-.album-img {
+.album-box .album-img {
   width: 800px;
   height: 800px;
   object-fit: contain;
 }
-
-.spotify-button {
+.album-box .spotify-button {
   align-self: flex-end;
 }
-
-.spotify-link {
+.album-box .spotify-link {
   font-family: "Fontspring-DEMO-proximanova-bold";
   font-size: 0.8rem;
   text-decoration: none;
@@ -393,27 +383,23 @@ nav {
   flex-direction: column;
   box-shadow: 5px 5px 5px rgb(27, 27, 27);
 }
-
-.tour-date {
+.date-item .tour-date {
   font-family: sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   color: white;
 }
-
-.tour-city {
+.date-item .tour-city {
   color: white;
   font-family: "Fontspring-DEMO-proximanovacond-black";
   font-size: 2.5rem;
 }
-
-.tour-place {
+.date-item .tour-place {
   color: white;
   font-family: "Fontspring-DEMO-proximanova-bold";
   font-size: 1rem;
 }
-
-.buytickets-link {
+.date-item .buytickets-link {
   color: white;
   font-family: "Fontspring-DEMO-proximanova-bold";
   font-size: 1rem;
@@ -427,8 +413,7 @@ nav {
   height: 100%;
   padding: 20px 20px;
 }
-
-.video-item {
+.video-container .video-item {
   width: 50%;
   height: 50%;
 }

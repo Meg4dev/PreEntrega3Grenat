@@ -10,52 +10,42 @@
 // Contenedor para album e informacion
 
 .album-box{
-    width: 100%;
-    height: 100%;
-    padding: 20px 30px;
-    margin: 5px;
-    overflow: auto;
-    display: flex;
-    gap: 20px;
+    @include flex-container-nodirection(100%, 100%, 20px 30px, 20px);
     background-color: black;
     border-radius: 10px;
-}
+    margin: 5px;
+    overflow: auto;
+    .album-info-container{
+        width: 100%;
+        height: 100%;
+    }
+    .album-title{
+        font-family: 'Fontspring-DEMO-proximanovacond-black';
+        font-size: 5rem;
+        color: white;
+    }
+    .album-text{
+        font-family: 'SchibstedGrotesk-Regular';
+        font-size: 18px;
+        color: white;
+    }
 
-.album-info-container{
-    width: 100%;
-    height: 100%;
-}
-
-.album-title{
-    font-family: 'Fontspring-DEMO-proximanovacond-black';
-    font-size: 5rem;
-    color: white;
-
-}
-
-.album-text{
-    font-family: 'Fontspring-DEMO-proximanova-regular';
-    font-size: 18px;
-    color: white;
-}
-
-.album-pic-container{
-    width: 100%;
-    height: 100%;
-}
-
-.album-img{
-    width: 800px;
-    height: 800px;
-    object-fit: contain;
-}
-
-.spotify-button{
-    align-self: flex-end;
-}
-.spotify-link{
-    font-family: 'Fontspring-DEMO-proximanova-bold';
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: white;
+    .album-pic-container{
+        width: 100%;
+        height: 100%;
+    }
+    .album-img{
+        width: 800px;
+        height: 800px;
+        object-fit: contain;
+    }
+    .spotify-button{
+        align-self: flex-end;
+    }
+    .spotify-link{
+        font-family: 'Fontspring-DEMO-proximanova-bold';
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: white;
+    }
 }
