@@ -6,6 +6,47 @@
     background-size:cover;
 }
 
+// Estilo para historia de la banda
+
+    .history-container{
+        @include flex-container(row, 100%, 100%, 30px 40px, 20px);
+        background-color: black;
+    }
+
+    .history-pic-container{
+        width: 45%;
+        height: 100%;
+        overflow: auto;
+        .history-pic{
+            width: 750px;
+            height: 700px;
+            object-fit: cover;
+        }
+    }
+
+    .history-info-container{
+        width: 55%;
+        height: 100%;
+        overflow: auto;
+        .history-title{
+            font-family: 'Fontspring-DEMO-proximanovacond-black';
+            font-size: 6rem;
+            color: white;
+        }
+        .band-history-text{
+            font-family: 'SchibstedGrotesk-Regular';
+            font-size: 18px;
+            color: white;
+            margin: 0;
+        }
+        
+    }
+
+    .history-container-reverse{
+        @include flex-container(row-reverse, 100%, 100%, 30px 40px, 20px);
+        background-color: black;
+        text-align: end;
+    }
 
 //Estilos para Ultimo Lanzamiento 
 
@@ -17,58 +58,49 @@
     color: white;
     overflow: auto;
     font-size: 18px;
+
+    .release-album{
+        width: 700px;
+        height: 650px;
+    }
+    .release-album-title{
+        font-family: 'Fontspring-DEMO-proximanovacond-black';
+        font-size: 8rem;
+        .release-info{
+            flex-direction: column;
+        }
+    }
 }
 
-.release-album{
-    width: 700px;
-    height: 650px;
-}
-
-.release-album-title{
-    font-family: 'Fontspring-DEMO-proximanovacond-black';
-    font-size: 8rem;
-}
-
-.release-info{
-    flex-direction: column;
-}
-
-// Next dates
+// Estilo para Proximas
 
 .nextdates-container{
-    padding: 10px;
-    gap: 20px;
+    @include flex-container-nodirection(100%, 350px, 10px, 20px);
     margin: 0px;
-    height: 350px;
-    width: 100%;
     color: white;
-    display: flex;
     justify-content: space-around;
-}
 
-.nextdate-items{
-    background-image: url(../images/tour-date-card.jpg);
-    background-size: auto;
-    background-attachment: fixed;
-    height: 295px;
-    width: 460px;
-    padding: 40px;
-}
-
-.next-date{
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.nextdate-country{
-    font-family: 'Fontspring-DEMO-proximanovacond-black';
-    font-size: 2rem;
-}
-
-.nextdate-place{
-    font-family: 'Fontspring-DEMO-proximanova-bold';
-    font-size: 1rem;
+    .nextdate-items{
+        background-image: url(../images/tour-date-card.jpg);
+        background-size: auto;
+        background-attachment: fixed;
+        height: 295px;
+        width: 460px;
+        padding: 40px;
+    }
+    .next-date{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .nextdate-country{
+        font-family: 'Fontspring-DEMO-proximanovacond-black';
+        font-size: 2rem;
+    }
+    .nextdate-place{
+        font-family: 'Fontspring-DEMO-proximanova-bold';
+        font-size: 1rem;
+    }
 }
 
 .nextdate-button{
@@ -76,11 +108,14 @@
     flex-direction: row-reverse;
     padding: 80px 5px;
     overflow: auto;
+    .nextdate-link{
+        font-family: 'Fontspring-DEMO-proximanova-bold';
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: yellow;
+        }
+    }
 }
 
-.nextdate-link{
-    font-family: 'Fontspring-DEMO-proximanova-bold';
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: white;
-}

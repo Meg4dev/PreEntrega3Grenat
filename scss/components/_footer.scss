@@ -11,13 +11,17 @@
     overflow: auto;
     height: 100%;
     width: 100%;
+
+    .footer-item{
+        text-decoration: none;
+    }
+
+    .footer-link{
+        color: white;
+        text-decoration: none;
+    }
+
 }
 
-.footer-item{
-    text-decoration: none;
-}
 
-.footer-link{
-    color: white;
-    text-decoration: none;
-}
+

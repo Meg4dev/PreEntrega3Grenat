@@ -1,0 +1,16 @@
+@mixin flex-container($direction, $width, $height, $padding, $gap){
+    display: flex;
+    flex-direction: $direction;
+    width: $width;
+    height: $height;
+    padding: $padding;
+    gap: $gap;
+}
+
+@mixin flex-container-nodirection($width, $height, $padding, $gap,) {
+    display: flex;
+    height: $height;
+    width: $width;
+    padding: $padding;
+    gap: $gap;
+}

@@ -7,6 +7,7 @@
 }
 
 /* Item contenedor para cada miembro */
+
 .member-item{
     display: flex;
     flex-direction: row;
@@ -34,35 +35,39 @@
 }
 
 /* Contenedor para la imagen del miembro */
+
 .pics-container{
     width: 45%;
     height: 100%;
     overflow: auto;
+    .member-pic{
+        width: 750px;
+        height: 700px;
+        object-fit: cover;
+    }
+
 }
 
-.member-pic{
-    width: 750px;
-    height: 700px;
-    object-fit: cover;
-}
 
 /* Contenedor para el titulo y texto del miembro */
 .member-info-container{
     width: 55%;
     height: 100%;
     overflow: auto;
+    .member-name{
+        font-family: 'Fontspring-DEMO-proximanovacond-black';
+        font-size: 6rem;
+        color: white;
+    }
+    .member-history{
+        font-family: 'Fontspring-DEMO-proximanova-regular';
+        font-size: 18px;
+        color: white;
+        margin: 0;
+    }
 }
 
-.member-name{
-    font-family: 'Fontspring-DEMO-proximanovacond-black';
-    font-size: 6rem;
-    color: white;
-}
 
-.member-history{
-    font-family: 'Fontspring-DEMO-proximanova-regular';
-    font-size: 18px;
-    color: white;
-    margin: 0;
-}
+
+
 
