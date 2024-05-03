@@ -131,29 +131,28 @@ nav {
 }
 
 .history-pic-container {
-  width: 45%;
-  height: 100%;
-  overflow: auto;
+  width: 90%;
+  height: 90%;
 }
 .history-pic-container .history-pic {
-  width: 750px;
+  width: 800px;
   height: 700px;
   object-fit: cover;
 }
 
 .history-info-container {
-  width: 55%;
+  width: 100%;
   height: 100%;
   overflow: auto;
 }
 .history-info-container .history-title {
   font-family: "Fontspring-DEMO-proximanovacond-black";
-  font-size: 6rem;
+  font-size: 5rem;
   color: white;
 }
 .history-info-container .band-history-text {
   font-family: "SchibstedGrotesk-Regular";
-  font-size: 18px;
+  font-size: 17px;
   color: white;
   margin: 0;
 }
@@ -276,7 +275,8 @@ nav {
   height: 100%;
   overflow: auto;
 }
-.pics-container .member-pic {
+
+.member-pic {
   width: 750px;
   height: 700px;
   object-fit: cover;
@@ -331,7 +331,6 @@ nav {
   font-family: "SchibstedGrotesk-Regular";
   font-size: 18px;
   color: white;
-  text-align: justify;
 }
 .album-box .album-pic-container {
   width: 100%;
@@ -340,7 +339,6 @@ nav {
 .album-box .album-img {
   width: 800px;
   height: 800px;
-  object-fit: contain;
 }
 .album-box .spotify-button {
   align-self: flex-end;
@@ -427,27 +425,7 @@ nav {
   background-size: cover;
 }
 
-.pic-gallery {
-  max-width: 100%;
-  padding: 25px 25px;
-  height: auto;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.gallery-box article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gallery-box article .gallery-box article img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
-  box-shadow: 4px 4px 4px;
-}
-.gallery-box article .gallery-box {
+.gallery-box {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
@@ -456,29 +434,143 @@ nav {
   width: 100%;
   height: 100%;
 }
-.gallery-box article .gallery-box .wide {
+.gallery-box .gallery-box article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-box .pic-gallery {
+  max-width: 100%;
+  padding: 25px 25px;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.gallery-box article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px;
+}
+.gallery-box article img .gallery-box .wide {
   grid-column: span 2;
 }
-.gallery-box article .gallery-box .tall {
+.gallery-box article img .gallery-box .tall {
   grid-row: span 2;
 }
-.gallery-box article .gallery-box .big {
+.gallery-box article img .gallery-box .big {
   grid-column: span 2;
   grid-row: span 2;
 }
 
-/* Media Queries para index.html */
-@media (max-width: 1024px) {
-  .release-album {
+@media (max-width: 1500px) {
+  .history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .history-container .history-pic-container {
+    width: 80%;
+    height: 80%;
+  }
+  .history-container .history-pic-container .history-pic {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+  }
+  .history-info-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .history-info-container .history-title {
+    text-align: center;
+  }
+  .history-info-container .band-history-text {
+    text-align: center;
+  }
+  .history-container-reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .history-container-reverse .history-pic-container {
+    width: 80%;
+    height: 80%;
+  }
+  .history-container-reverse .history-pic-container .history-pic {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 875px) {
+  .history-info-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .history-info-container .history-pic-container {
+    width: 100%;
+    height: 100%;
+  }
+  .history-info-container .history-pic-container .history-pic {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+  }
+  .history-info-container .history-title {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .history-info-container .band-history-text {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+@media (max-width: 655px) {
+  .history-info-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .history-info-container .history-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .history-info-container .band-history-text {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .history-info-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .history-info-container .history-title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .history-info-container .band-history-text {
+    text-align: center;
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 1300px) {
+  .release-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .release-container .release-album {
     width: 100%;
     height: auto;
   }
-  .release-album-title {
+  .release-container .release-album-title {
     font-size: 4rem;
-    text-align: center;
-  }
-  .release-container {
-    flex-direction: column;
     text-align: center;
   }
   .nextdates-container {
@@ -487,16 +579,16 @@ nav {
     height: 300px;
     gap: 40px;
   }
-  .nextdate-items {
+  .nextdates-container .nextdate-items {
     width: auto;
     height: 300px;
     text-align: center;
     font-size: 2rem;
   }
-  .nextdate-button {
+  .nextdates-container .nextdate-button {
     justify-content: center;
   }
-  .next-date {
+  .nextdates-container .next-date {
     font-size: 18px;
   }
 }
@@ -509,48 +601,48 @@ nav {
     flex-direction: column;
     padding: 20px;
   }
+  .member-item .pics-container {
+    width: 100%;
+    height: 100%;
+  }
+  .member-item .member-item img {
+    width: 100%;
+    height: 100%;
+  }
+  .member-item .member-info-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
   .member-item-reverse {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
   }
-  .member-info-container {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-  .pics-container {
-    width: 100%;
-    height: 100%;
-  }
-  .member-item img {
-    width: 100%;
-    height: 100%;
-  }
-  .member-item-reverse img {
+  .member-item-reverse .member-item-reverse img {
     width: 100%;
     height: 100%;
   }
 }
 @media (max-width: 910px) {
-  .member-name {
+  .member-info-container .member-name {
     font-size: 5rem;
   }
 }
 @media (max-width: 650px) {
-  .member-name {
+  .member-info-container .member-name {
     font-size: 4rem;
   }
-  .member-history {
+  .member-info-container .member-history {
     font-size: 16px;
   }
 }
-@media (max-width: 435px) {
-  .member-name {
+@media (max-width: 532px) {
+  .member-info-container .member-name {
     font-size: 3rem;
   }
-  .member-history {
+  .member-info-container .member-history {
     font-size: 14px;
   }
 }
@@ -561,13 +653,13 @@ nav {
     text-align: center;
     background-color: transparent;
   }
-  .album-info-container {
+  .album-box .album-info-container {
     background-color: black;
     border-radius: 10px;
     box-shadow: black 4px 4px 4px;
     padding: 10px 20px;
   }
-  .spotify-button {
+  .album-box .spotify-button {
     align-self: center;
     background-color: black;
     height: 29px;
@@ -575,7 +667,7 @@ nav {
     border-radius: 5px;
     box-shadow: black 2px 2px 2px 2px;
   }
-  .spotify-link:hover {
+  .album-box .spotify-link:hover {
     color: yellow;
     font-size: 15px;
     transition: 0.5s;
@@ -587,33 +679,33 @@ nav {
     height: 500px;
     align-self: center;
   }
-  .album-img {
+  .album-pic-container .album-img {
     width: 500px;
     height: 500px;
   }
-  .album-title {
+  .album-info-container .album-title {
     font-size: 4rem;
   }
 }
 @media (max-width: 570px) {
+  body main h1 {
+    font-size: 3rem;
+  }
   .album-pic-container {
     width: 400px;
     height: 400px;
     align-self: center;
   }
-  .album-img {
+  .album-pic-container .album-img {
     width: 400px;
     height: 400px;
   }
-  main h1 {
-    font-size: 3rem;
-  }
-  .album-info-container {
+  .album-box .album-info-container {
     width: 100%;
     height: 100%;
     text-align: center;
   }
-  .album-text {
+  .album-box .album-text {
     font-size: 14px;
   }
 }
@@ -623,25 +715,30 @@ nav {
     height: 300px;
     align-self: center;
   }
-  .album-img {
+  .album-pic-container .album-img {
     width: 300px;
     height: 300px;
   }
-  .album-title {
+  .album-info-container .album-title {
     font-size: 3rem;
   }
-  .album-title .album-pic-container {
+}
+@media (max-width: 360px) {
+  .album-pic-container {
     width: 200px;
     height: 200px;
     align-self: center;
   }
-  .album-title .album-img {
+  .album-pic-container .album-img {
     width: 200px;
     height: 200px;
   }
+  .album-info-container .album-title {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 380px) {
-  main h1 {
+  body main h1 {
     font-size: 2.5rem;
   }
 }
@@ -655,7 +752,7 @@ nav {
     width: 100%;
     height: 100%;
   }
-  .video-item {
+  .video-container .video-item {
     justify-self: center;
     width: 100%;
     height: 100%;
@@ -672,7 +769,7 @@ nav {
     flex-direction: column;
     text-align: center;
   }
-  .date-item {
+  .date-box .date-item {
     text-align: center;
     width: 100%;
     height: 100%;

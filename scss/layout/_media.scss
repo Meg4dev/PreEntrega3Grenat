@@ -1,43 +1,149 @@
-/* Media Queries para index.html */
+//Media Queries para index.html
 
-@media (max-width: 1024px){
-    
-    .release-album{
+@media (max-width:1500px){
+    .history-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .history-pic-container{
+            width: 80%;
+            height: 80%;
+            .history-pic{
+                align-self: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .history-info-container{
         width: 100%;
-        height: auto;
+        height: 100%;
+        justify-content: center;
+
+        .history-title{
+            text-align: center;
+        }
+        .band-history-text{
+            text-align: center;
+            
+        }
     }
-    .release-album-title{
-        font-size: 4rem;
-        text-align: center;
+
+    .history-container-reverse{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .history-pic-container{
+            width: 80%;
+            height: 80%;
+            .history-pic{
+                align-self: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
+}
+
+@media (max-width:875px){
+
+    .history-info-container{
+        .history-pic-container{
+            width: 100%;
+            height: 100%;
+            .history-pic{
+                align-self: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+
+        .history-title{
+            text-align: center;
+            font-size: 3rem;
+        }
+        .band-history-text{
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width:655px){
+    .history-info-container{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+
+        .history-title{
+            text-align: center;
+            font-size: 2rem;
+        }
+        .band-history-text{
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width:550px){
+    .history-info-container{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+
+        .history-title{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .band-history-text{
+            text-align: center;
+            font-size: 14.5px;
+        }
+    }
+}
+
+
+
+@media (max-width: 1300px){
     .release-container
     {
         flex-direction: column;
         text-align: center;
+        .release-album{
+            width: 100%;
+            height: auto;
+        }
+        .release-album-title{
+            font-size: 4rem;
+            text-align: center;
+        }
     }
-
+    
     .nextdates-container{
         flex-direction: column;
         width: auto;
         height: 300px;
         gap: 40px;
+        .nextdate-items{
+            width: auto;
+            height: 300px;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .nextdate-button{
+            justify-content: center;
+        }
+        .next-date{
+            font-size: 18px;
+        }}
     }
-    .nextdate-items{
-        width: auto;
-        height: 300px;
-        text-align: center;
-        font-size: 2rem;
-    }
-    .nextdate-button{
-        justify-content: center;
-    }
-    .next-date{
-        font-size: 18px;
-    }}
-
 
     /* Media Queries para Banda.html */
-
 
     @media (max-width: 1400px){
     .member-item{
@@ -46,7 +152,19 @@
         display: flex;
         flex-direction: column;
         padding: 20px;
-
+        .pics-container{
+            width: 100%;
+            height: 100%;
+        }
+        .member-item img{
+            width: 100%;
+            height: 100%;
+        }
+        .member-info-container{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
     }
 
     .member-item-reverse{
@@ -55,59 +173,43 @@
         display: flex;
         flex-direction: column;
 
-    }
-
-    .member-info-container{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-    }
-    .pics-container{
-        width: 100%;
-        height: 100%;
-    }
-    .member-item img{
-        width: 100%;
-        height: 100%;
-    }
-    .member-item-reverse img{
-        width: 100%;
-        height: 100%;
+        .member-item-reverse img{
+            width: 100%;
+            height: 100%;
+        }
     }
 
 }
 
 @media (max-width: 910px){
+    .member-info-container{
     .member-name{
         font-size: 5rem;
     }
-
-}
+}}
 
 @media (max-width: 650px){
+    .member-info-container{
     .member-name{
         font-size: 4rem;
     }
     .member-history{
         font-size: 16px;
     }
-
+}
 }
 
-@media (max-width: 435px){
+@media (max-width: 532px){
+    .member-info-container{
     .member-name{
         font-size: 3rem;
     }
     .member-history{
         font-size: 14px;
-    }
-
-
-}
+    }}}
 
 
 /* Media Queries para Discografia.html */
-
 
 
 @media (max-width: 1580px){
@@ -115,28 +217,27 @@
         flex-direction: column;
         text-align: center;
         background-color: transparent;
+        .album-info-container{
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: black 4px 4px 4px;
+            padding: 10px 20px;
+            }
+            .spotify-button{
+                align-self: center;
+                background-color: black;
+                height: 29px;
+                width: 84px;
+                border-radius: 5px;
+                box-shadow: black 2px 2px 2px 2px;
+            }
+            .spotify-link:hover{
+                color: yellow;
+                font-size: 15px;
+                transition: 0.5s;
+            }
+        }
     }
-    .album-info-container{
-    background-color: black;
-    border-radius: 10px;
-    box-shadow: black 4px 4px 4px;
-    padding: 10px 20px;
-    }
-    .spotify-button{
-        align-self: center;
-        background-color: black;
-        height: 29px;
-        width: 84px;
-        border-radius: 5px;
-        box-shadow: black 2px 2px 2px 2px;
-    }
-    .spotify-link:hover{
-        color: yellow;
-        font-size: 15px;
-        transition: 0.5s;
-    }
-    
-}
 
 @media (max-width: 888px){
 
@@ -144,40 +245,43 @@
         width: 500px;
         height: 500px;
         align-self: center;
-    }
-    .album-img{
-        width: 500px;
-        height: 500px;
+        .album-img{
+            width: 500px;
+            height: 500px;
+        }}
+        .album-info-container{
+            .album-title{
+                font-size: 4rem;
+            }
+        }
     }
 
-    .album-title{
-        font-size: 4rem;
-    }
-}
+
+
 
 @media (max-width: 570px){
+    body main h1{
+        font-size: 3rem;
+    }
     .album-pic-container{
         width: 400px;
         height: 400px;
         align-self: center;
+        .album-img{
+            width: 400px;
+            height: 400px;
+            }
         }
-    .album-img{
-        width: 400px;
-        height: 400px;
-        }
-    main h1{
-        font-size: 3rem;
-    }
 
-    .album-info-container{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-    }
-    .album-text{
-        font-size: 14px;
-    }
-}
+        .album-box{
+        .album-info-container{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        .album-text{
+            font-size: 14px;
+        }}}
 
 
 @media (max-width: 478px){
@@ -185,36 +289,40 @@
         width: 300px;
         height: 300px;
         align-self: center;
-        }
-    .album-img{
+        .album-img{
         width: 300px;
         height: 300px;
         }
-    .album-title{
+        }
+        .album-info-container{
+        .album-title{
         font-size: 3rem;
-        .album-pic-container{
-            width: 200px;
-            height: 200px;
-            align-self: center;
-            }
-        .album-img{
-            width: 200px;
-            height: 200px;
-            }
-    }
+        }}}
 
-}
+        @media (max-width: 360px){
+            .album-pic-container{
+                width: 200px;
+                height: 200px;
+                align-self: center;
+                .album-img{
+                width: 200px;
+                height: 200px;
+                }
+                }
+                .album-info-container{
+                .album-title{
+                font-size: 2rem;
+                }}}
+        
+
 
 @media (max-width: 380px){
-    main h1{
+    body main h1{
         font-size: 2.5rem;
     }
 }
 
-
 /* Media Queries para tour.html */
-
-
 
 @media ( max-width: 1410px){
     .date-box{
@@ -224,11 +332,11 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
-    }
-    .video-item{
-        justify-self: center;
-        width: 100%;
-        height: 100%;
+        .video-item{
+            justify-self: center;
+            width: 100%;
+            height: 100%;
+        }
     }
 } 
 @media( max-width: 930px){
@@ -242,12 +350,13 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        .date-item{
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
     }
-    .date-item{
-        text-align: center;
-        width: 100%;
-        height: 100%;
-    }
+
     .video-item{
         width: 100%;
         height: 100%;
